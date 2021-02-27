@@ -1,12 +1,13 @@
 body {
 	display: flex;
+	flex-direction: column;
 	overflow: hidden;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	background-color: hsl(185, 75%, 39%);
 	background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
-	background-position: -115% 170%, 200% -110%;
+	background-position: left -360px top -590px, right -300px bottom -660px;
 	background-repeat: no-repeat, no-repeat;
 }
 
@@ -36,7 +37,6 @@ p {
 
 .attribution {
 	color: white;
-	position: absolute;
 	bottom: 15px;
 	font-size: 11px;
 }
@@ -73,7 +73,7 @@ p {
 
 #header {
 	width: 100%;
-	height: 152px;
+	height: 140px;
 	background-size: cover;
 	background-image: url(./images/bg-pattern-card.svg);
 	border-top-left-radius: 20px;
@@ -93,12 +93,12 @@ p {
 	position: relative;
 	top: -56px;
 	border-radius: 70px;
-	border: 8px solid white;
+	border: 6px solid white;
 }
 
 #profile-card {
-	margin: auto;
-	width: 380px;
+	margin: 20px;
+	width: 350px;
 	border-radius: 20px;
 	box-shadow: 0px 40px 108px 0px hsl(185, 75%, 29%);
 	background-color: white;
@@ -106,5 +106,5 @@ p {
 
 #stats {
 	line-height: 1;
-	padding: 10px 15px;
+	padding: 20px 15px;
 }
