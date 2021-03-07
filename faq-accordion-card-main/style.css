@@ -11,10 +11,10 @@ html {
 	align-items: center;
 	font-family: 'Kumbh Sans', 'sans serif';
 	font-size: 12px;
-	padding: 120px 0 60px;
+	padding: 120px 0 40px;
 	background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 	background-repeat: no-repeat;
-	min-height: 100vh;
+	max-height: 100vh;
 }
 
 .answer {
@@ -93,11 +93,6 @@ html {
 	display: none;
 }
 
-#faq-heading {
-	text-align: center;
-	width: 90%;
-}
-
 #faq-card {
 	display: flex;
 	flex-wrap: wrap;
@@ -114,12 +109,67 @@ html {
 	/*height: 470px;*/
 }
 
+#faq-heading {
+	text-align: center;
+	width: 90%;
+}
+
 #mobile-image {
 	position: relative;
 	top: -135px;
 	left: -17px;
 	width: 80%;
+	min-width: 286px;
 	max-width: 286px;
+}
+
+@media only screen and (min-width: 590px) and (max-width: 800px) {
+	.card-column {
+		display: initial;
+		overflow: visible;
+		min-height: 1px;
+		margin-top: initial;
+		padding: 40px 0;
+		width: 50%;
+		/*border: 1px solid red;*/
+		height: 100%;
+	}
+
+	.row {
+		width: 90%;
+	}
+
+	#email-box {
+		display: inline-block;
+		position: relative;
+		width: 40%;
+		top: 30%;
+		left: -20%;
+	}
+
+	#faq-card {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0px 10px 20px 0px hsl(273, 75%, 46%);
+		border-radius: 30px;
+		background-color: white;
+		background-image: url('./images/illustration-woman-online-desktop.svg'), url('./images/bg-pattern-desktop.svg');
+		background-size: 50%, 95%;
+		background-repeat: no-repeat, no-repeat;
+		background-position: left -17% center, left -1085% bottom 33%;
+		padding: 20px 0 20px;
+		width: 520px;
+	}
+
+	#faq-card:last-child {
+		flex-grow: 1;
+	}
+
+	#mobile-image {
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 800px) {
